@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.neusoft.dao.FoodDao">
+	<resultMap type="com.neusoft.pojo.FoodType" id="foodMap">
+		<id property="id" column="id" />
+		<result property="typeName" column="typeName" />
+		<association property="food" javaType="com.neusoft.pojo.Food">
+			<id property="id" column="id" />
+			<result property="foodName" column="foodName" />
+			<result property="feature" column="feature" />
+			<result property="material" column="material" />
+			<result property="price" column="price" />
+			<result property="type" column="type" />
+			<result property="picture" column="picture" />
+			<result property="hits" column="hits" />
+			<result property="comment" column="comment" />
+		</association>
+	</resultMap>
+	
+	<!--根据id查询当前菜品FoodType  -->
+	<select id="foodSelectById" resultMap="foodMap" parameterType="java.lang.Integer">
+		select
+		foodtype.typeName,food.id,food.foodName,food.feature,food.material,food.price,food.type,food.picture,food.hits,food.comment
+		from foodtype join food on foodtype.id=food.type where
+		food.id=#{food.id}
+	</select>
+	<!--根据id查询当前菜品Food  -->
+	<select id="foodBuySelectById" resultType="com.neusoft.pojo.Food" parameterType="java.lang.String">
+		select * from food where id=#{id}
+	</select>
+	<!--全部菜品，菜品列表  -->
+	<select id="foodShow" resultMap="foodMap">
+		select foodtype.typeName,food.id,food.foodName,food.feature,food.material,food.price,food.type,food.picture,food.hits,food.comment from foodtype join food on foodtype.id=food.type 
+	</select>
+	<!--菜品信息更新  -->
+	<update id="foodMsgAlter" parameterType="com.neusoft.pojo.Food">
+		update food set foodName=#{foodName},feature=#{feature},material=#{material},price=#{price},type=#{type},picture=#{picture},hits=#{hits} where id=#{id}
+	</update>
+	<!--根据商品id删除当前菜品 -->
+	<delete id="foodDelete" parameterType="java.lang.Integer">
+		delete from food where id=#{id}
+	</delete>
+	<!--添加商品-->
+	<insert id="foodAdd" parameterType="com.neusoft.pojo.Food">
+		insert into food(foodName,feature,material,price,type,picture,hits) values(#{foodName},#{feature},#{material},#{price},#{type},#{picture},#{hits})
+	</insert>
+	<!--根据菜品类型显示菜品 -->
+	<select id="foodSelectByType" resultType="com.neusoft.pojo.Food" parameterType="java.lang.Integer">
+		select * from food where type=#{type} 
+	</select>
+</mapper>

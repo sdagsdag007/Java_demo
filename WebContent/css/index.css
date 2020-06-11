@@ -1,0 +1,500 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+
+/* 杞挱涓讳綋 */
+
+.show {
+    width: 1160px;
+    height: 360px;
+    margin: 10px auto;
+    margin-top: 0px;
+    position: relative;
+}
+
+
+/* 杞挱宸︿晶鏂囧瓧 */
+
+.show_Text {
+    width: 234px;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 66;
+}
+
+.show_Text>ul {
+    width: 220px;
+    height: 360px;
+    list-style: none;
+}
+
+.show_Text>ul>li {
+    width: 220px;
+    height: 42px;
+    padding-top: 30px;
+}
+
+.show_Text>ul>li>a {
+    color: white;
+    display: block;
+}
+
+.show_Text>ul>li>a span {
+    font-size: 18px;
+    padding-left: 20px;
+    float: left;
+}
+
+.show_Text>ul>li>a i {
+    padding-top: 4px;
+    float: right;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/* 杞挱鍥惧尯鍩� */
+
+.showPicture {
+    width: 580px;
+    height: 360px;
+}
+
+
+/* 鍒楄〃 */
+
+.list {
+    list-style: none;
+}
+
+
+/* 鍥剧墖鍗曢」 */
+
+.item {
+    width: 580px;
+    height: 360px;
+    position: absolute;
+    opacity: 0;
+    transition: all 1.3s;
+}
+
+
+/* 鍥剧墖active */
+
+.active {
+    opacity: 1;
+    z-index: 20;
+}
+
+
+/* 鍦嗙偣ul */
+
+.pointlist {
+    list-style: none;
+    position: relative;
+    left: 570px;
+    top: 330px;
+    z-index: 20;
+}
+
+
+/* 鍦嗙偣 */
+
+.point {
+    width: 8px;
+    height: 8px;
+    float: left;
+    margin-right: 14px;
+    cursor: pointer;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* 鍥剧墖active */
+
+.point.active {
+    background-color: white;
+    border: solid 2px rgba(0, 0, 0, 0.2);
+}
+
+
+/* 鍙充晶鍥剧墖 */
+
+.show_pricture_right {
+    width: 260px;
+    height: 100%;
+    float: left;
+    margin-left: 15px;
+}
+
+.list_right {
+    list-style: none;
+}
+
+.list_right_item {
+    width: 260px;
+    margin-bottom: 15px;
+}
+
+/*-------------------------------------鎺掕姒�&浠婃棩鎺ㄨ崘&鍙戠幇濂借揣--------------------------------------------------*/
+.show_SecondContent{
+    width: 1160px;
+    height: 341px;
+    margin: 10px auto;
+    margin-top: 13px;
+}
+/* 鎺掕姒� */
+.show_SecondContent_Rank{
+    width: 340px;
+    height:341px;
+}
+/* 鎺掕姒滄爣棰� */
+.show_SecondContent_RankTitle{
+    width: 376px;
+    height: 50px;
+    text-align: center;
+    background-color:#fff;
+}
+/* 鎺掕姒滄爣棰�+鍥剧墖 */
+.show_SecondContent_RankTitle_Left{
+    width:95px;
+    height: 30px;
+    font-weight: 500;
+    float: left;
+    padding-top:10px;
+    margin-left:30px;
+   
+}
+.show_SecondContent_RankTitle_Left>p{
+    font-size: 22px;
+    float: left;
+}
+.show_SecondContent_RankTitle_Left>img{
+    margin-top:4px;
+    float: right;
+}
+.show_SecondContent_RankTitle_Text{
+   font-size: 14px;
+   margin-top: 17px;
+   margin-left: 5px;
+   color: #999;
+   float: left;
+}
+/* 鎺掕姒滄枃瀛� */
+.show_SecondContent_RankNav{
+    width: 376px;
+    height: 30px;
+    background-color: #f7f7f7;
+}
+.show_SecondContent_RankNav>ul{
+    list-style: none;
+    margin-left:30px;
+}
+.show_SecondContent_RankNav>ul>li{
+    float: left;
+    width: 72px;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.show_SecondContent_RankNav>ul>li>a{
+    color: #999;
+}
+
+/* 鎺掕姒滃唴瀹� */
+.show_SecondContent_RankContent{
+    width: 376px;
+    height: 265px;
+    display: block;
+    background-color:#fff;
+}
+/* 鍥剧墖 */
+.show_SecondContent_RankContent_Img{
+    float: left;
+}
+.show_SecondContent_RankContent_ImgContent{
+    width: 70px;
+    height: 70px;
+    margin-left:30px;
+    margin-top:10px;
+}
+/* 鍚嶆 */
+.show_SecondContent_RankContent_Rank{
+    float: left;
+}
+.show_SecondContent_RankContent_RankText{
+    width: 30px;
+    height: 40px;
+    margin: 36px 0 0 30px;
+    line-height: 40px;
+    font-size: 32px;
+    text-align: center;
+    font-family: 'impact', sans-serif;
+}
+/* 鑿滃搧淇℃伅 */
+.show_SecondContent_RankContent_RankContent{
+    width: 160px;
+    height:240px;
+    float: left;
+    font-size: 13px;
+}
+.show_SecondContent_RankContent_RankContent>p{
+    margin: 37px 0 0 10px;
+    color:black;
+    padding-bottom: 5px;
+}
+/*鐢ㄤ簬鎿嶄綔瀵艰埅*/
+.caipindaohang{}
+
+
+/*浠婃棩鎺ㄨ崘*/
+.show_SecondContent_Recommend{
+    width: 376px;
+    height:344px;
+    position: relative;
+    left: 393px;
+    bottom: 351px;
+    background-color:#fff;
+}
+.show_SecondContent_RecommendBox{
+    height: 40px;
+    position: relative;
+    top: 10px;
+
+}
+.show_SecondContent_RecommendBox_Left{
+    width:120px;
+    height: 30px;
+    font-weight: 500;
+    margin-top:10px;
+    margin-left: 10px;
+  
+}
+.show_SecondContent_RecommendBox_Left>p{
+    font-size: 22px;
+    float: left;
+}
+.show_SecondContent_RecommendBox_Left>img{
+    margin-top:4px;
+    float: right;
+}
+.show_SecondContent_RecommendBox_Text{
+    width: 150px;
+    font-size: 14px;
+    position: relative;
+    left: 136px;
+    bottom: 23px;
+    color: #999;
+}
+.show_SecondContent_RecommendTitle_Img{
+    font-size: 14px;
+    padding-bottom: 10px;
+    text-align: center;
+   
+}
+.show_SecondContent_RecommendTitle_Img>h3{
+    margin-top: 10px;
+}
+.show_SecondContent_RecommendTitle_goodsText{
+    font-size: 13px;
+}
+.show_SecondContent_RecommendTitle_Wrap{
+    width: 376px;
+    height: 2px;
+    margin:10px 0px 25px 0px;
+    background-color: #f5f5f5;
+}
+.show_SecondContent_RecommendTitle_Control{
+    width: 25px;
+    height: 5px;
+    border:1px solid rgba(0, 0, 0, 0.1);
+    background-color:#f7f7f7;
+    position: relative;
+    left: 144px;
+    bottom: 25px;
+}
+.show_SecondContent_RecommendTitle_ControlActive{
+    background-color: #f66495;
+}
+/* 鍙戠幇濂借揣 */
+.show_SecondContent_GoodGoods{
+    width: 376px;
+    height:344px;
+    position: relative;
+    left: 784px;
+    bottom: 705px;
+    background-color:#fff;
+}
+.show_SecondContent_GoodGoodsContent{
+    width: 376px;
+    height: 286px;
+}
+.show_SecondContent_GoodGoodsContent_Main{
+    width: 184px;
+  
+}
+.show_SecondContent_GoodGoodsContent_Main:hover{
+    border: 1px solid #f66495;
+}
+.show_SecondContent_GoodGoodsContent_Img{
+    margin-left:29px;
+}
+.show_SecondContent_GoodGoodsContent_Title{
+    font-weight: 550;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+    transition: color ease 0.2s;
+    margin-left: 28px;
+}
+.show_SecondContent_GoodGoodsContent_Text{
+    margin-left: 28px;
+    font-size: 14px;
+}
+.show_SecondContent_GoodGoodsContent_Details>a{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    font-size: 16px;
+    color:#fff;
+}
+.One{
+    margin-bottom: 2px;
+}
+.Two{
+    position: relative;
+    left: 188px;
+    bottom: 143px;
+}
+.Three{
+    position: relative;
+    bottom: 141px;
+}
+.Four{
+    position: relative;
+    left: 188px;
+    bottom:282px;
+}
+/* ------------------------------------------鑿滃搧灞曠ず----------------------------------------------------------- */
+
+.food_show_area {
+    width: 1160px;
+    margin: 20px auto;
+}
+
+.food_show_title {
+    width: 1160px;
+    height: 48px;
+}
+
+.food_show_titleLeft {
+    width: 103px;
+    height: 48px;
+    float: left;
+}
+
+.food_show_titleLeft>img {
+    float: left;
+}
+
+.food_show_titleLeft>p {
+    font-size: 26px!important;
+    line-height: 50px;
+    font-weight: 400;
+    float: right;
+}
+
+.food_show_titleRight {
+    width: 200px;
+    height: 48px;
+    font-size: 14px;
+    float: left;
+}
+
+.food_show_titleRight>p {
+    font-size: 14px;
+    color: #999;
+    margin-top: 18px;
+    margin-left: 9px;
+}
+
+
+/* 鍙充晶鑿滃搧鎺ㄨ崘 */
+
+.food_show_titleRight_Recommend {
+    width: 300px;
+    height: 48px;
+    float: right;
+}
+
+.food_show_titleRight_Recommend_More {
+    margin-top: 14px;
+    font-size: 12px;
+    width: 52px;
+    height: 22px;
+    background-color: #fff;
+    border: 1px solid #ccd0d7;
+    border-radius: 4px;
+    color: #555;
+    float: right;
+    line-height: 22px;
+    text-indent: 10px;
+    transition: all .2s;
+}
+.food_show_titleRight_Recommend_More:hover{
+    color: #f66495;
+}
+.food_show_main {
+    width: 1160px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.food_show_main>ul {
+    list-style: none;
+    height: 230px;
+    width: 1160px;
+}
+
+.food_show_main>ul>li {
+    width: 212px;
+    float: left;
+    margin-right: 20px;
+}
+.food_show_main>ul>li>a {
+    color: #bbb;
+}
+.food_show_main>ul>li>a img {
+    padding-top: 22px;
+    padding-left: 22px;
+    border-radius: 5px;
+}
+
+.food_show_main>ul>li>a p {
+    padding-left: 22px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.food_show_main>ul>li:hover {
+    background-color: white;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+/* 广告投放 */
+.advertisment{
+    width: 1160px;
+    margin: 6px auto;
+}

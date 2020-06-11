@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.neusoft.dao.UserDao">
+    <!--用户注册-->
+  	<insert id="UserRegister" parameterType="com.neusoft.pojo.User">
+  		insert into user(userName,password,ident,telephone,address) values(#{userName},#{password},#{ident},#{telephone},#{address})
+  	</insert>
+  	<!--用户登录-->
+  	<select id="UserLogin" resultType="com.neusoft.pojo.User" parameterType="com.neusoft.pojo.User">
+  		select * from user where userName=#{userName} and password=#{password}
+  	</select>
+  	<!--用户个人信息修改  -->
+  	<update id="UserMsgUpdate" parameterType="com.neusoft.pojo.User">
+  		update user set userName=#{userName},password=#{password},telephone=#{telephone},address=#{address} where id=#{id}
+  	</update>
+  	<!--管理当前系统内用户信息-->
+  	<select id="memberMsgAdmin" resultType="com.neusoft.pojo.User">
+  		select * from user
+  	</select>
+  	<!--根据用户id获取当前用户数据-->
+  	<select id="memberSelectById" resultType="com.neusoft.pojo.User" parameterType="int">
+  		select * from user where id=#{id}
+  	</select>
+  	<!--根据用户id更新当前用户数据  -->
+  	<update id="memberMsgAlter" parameterType="com.neusoft.pojo.User">
+  		update user set userName=#{userName},password=#{password},telephone=#{telephone},address=#{address} where id=#{id}
+  	</update>
+  	<!--根据用户id删除当前用户数据  -->
+  	<delete id="memberDelete" parameterType="int">
+  		delete from user where id=#{id}
+  	</delete>
+  	<!--搜索菜品内容-->
+	<resultMap type="com.neusoft.pojo.FoodType" id="searchMap">
+		<id property="id" column="id" />
+		<result property="typeName" column="typeName" />
+		<association property="food" javaType="com.neusoft.pojo.Food">
+			<id property="id" column="id" />
+			<result property="foodName" column="foodName" />
+			<result property="feature" column="feature" />
+			<result property="material" column="material" />
+			<result property="price" column="price" />
+			<result property="type" column="type" />
+			<result property="picture" column="picture" />
+			<result property="hits" column="hits" />
+			<result property="comment" column="comment" />
+		</association>
+	</resultMap>
+	<select id="memberSearch" resultMap="searchMap" parameterType="java.lang.String">
+		select foodtype.typeName,food.id,food.foodName,food.feature,food.material,food.price,food.type,food.picture,food.hits,food.comment from foodtype join food on foodtype.id=food.type  where food.foodName like #{foodName}
+	</select>
+	<!--初始化广告列表 -->
+	<select id="InitAdList" resultType="com.neusoft.pojo.AdverTisement">
+		select * from advertisement
+	</select>
+	<!--管理员投放广告  -->
+	<select id="InitAd" resultType="com.neusoft.pojo.AdverTisement" parameterType="java.lang.Integer">
+		select * from advertisement where adView=1
+	</select>
+	<!--管理员投放当前id的广告显示  -->
+	<select id="ShowAd" parameterType="java.lang.Integer">
+		update advertisement set adView=1 where id=#{id}
+	</select>
+	<!--管理员设置广告均不显示-->
+	<update id="DestoryAd">
+		update advertisement set adView=0
+	</update>
+  </mapper>

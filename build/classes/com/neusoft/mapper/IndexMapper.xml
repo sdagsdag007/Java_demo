@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.neusoft.dao.IndexDao">
+  <!--主页初始化排行榜家常-->
+  	<select id="RankJiaChang" resultType="com.neusoft.pojo.Food">
+  		select * from food where type=1 order by hits DESC LIMIT 0,3
+  	</select>
+  	
+  	<!--主页初始化排行榜凉菜-->
+  	<select id="RankLiangCai" resultType="com.neusoft.pojo.Food">
+  		select * from food where type=2 order by hits DESC LIMIT 0,3
+  	</select>
+  	
+  	<!--主页初始化排行榜主食-->
+  	<select id="RankZhuShi" resultType="com.neusoft.pojo.Food">
+  		select * from food where type=3 order by hits DESC LIMIT 0,3
+  	</select>
+  	
+  	<!--主页初始化排行榜饮品-->
+  	<select id="RankYinPin" resultType="com.neusoft.pojo.Food">
+  		select * from food where type=4 order by hits DESC LIMIT 0,3
+  	</select>
+  	
+  	<!--主页初始化家常-->
+  	<select id="InitJiaChang" resultType="com.neusoft.pojo.Food">
+  		select * from food where type=1 order by hits DESC LIMIT 0,5
+  	</select>
+  	
+  	<!--主页初始化凉菜-->
+  	<select id="InitLiangCai" resultType="com.neusoft.pojo.Food">
+  		select * from food where type=2 order by hits DESC LIMIT 0,5
+  	</select>
+  	
+  	<!--主页初始化主食-->
+  	<select id="InitZhuShi" resultType="com.neusoft.pojo.Food">
+  		select * from food where type=3 order by hits DESC LIMIT 0,5
+  	</select>
+  	
+  	<!--主页初始化饮品-->
+  	<select id="InitYinPin" resultType="com.neusoft.pojo.Food">
+  		select * from food where type=4 order by hits DESC LIMIT 0,5
+  	</select>
+  </mapper>

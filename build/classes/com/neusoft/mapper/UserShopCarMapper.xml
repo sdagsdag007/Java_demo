@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.neusoft.dao.UserShopCarDao">
+  <!-- 将所购商品添加到数据库中 -->
+  	<insert id="UserGoodsAdd" parameterType="com.neusoft.pojo.UserShopCar">
+  		insert into usershopcar(userId,foodId) values(#{userId},#{foodId})
+  	</insert>
+  <!--当前用户购物车-->
+  <select id="userShopCar" resultType="com.neusoft.pojo.UserShopCar" parameterType="java.lang.Integer">
+  	select * from usershopcar where userId=#{userId}
+  </select>
+  <!--将当选中商品都数据库中删除 -->
+  <delete id="UserGoodsDelete" parameterType="com.neusoft.pojo.UserShopCar">
+  	delete from usershopcar where userId=#{userId} and foodId=#{foodId}
+  </delete>
+  </mapper>

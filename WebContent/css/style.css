@@ -1,0 +1,842 @@
+/* ----------------------------------------------------鍏ㄥ眬---------------------------------------------------------------------- */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+    font-family: "Microsoft YaHei";
+}
+
+a {
+    text-decoration: none;
+    color: #059ae7;
+}
+
+.container {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 200px;
+    box-sizing: border-box;
+}
+
+/* ----------------------------------------------------澶撮儴------------------------------------------------------------------------ */
+
+.head {
+    width: 100%;
+    height: 44px;
+    font-size: 13px;
+    background-color: hsla(0, 0%, 100%, .2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+/* 鍐呭 */
+
+.head_main {
+    width: 1160px;
+    margin: 0px auto;
+   
+}
+
+.head_main_leftNav {
+    width: 688px;
+    height: 45px;
+    float: left;
+}
+
+.head_main_list {
+    width: 500px;
+    height: 45px;
+    list-style: none;
+}
+
+.head_main_itemHome {
+    width: 48px;
+    float: left;
+    padding-top: 16px;
+}
+
+.head_main_itemNormalFood {
+    width: 39px;
+    float: left;
+    padding-top: 16px;
+    margin-left: 13px;
+}
+
+.head_main_itemColdFood {
+    width: 26px;
+    float: left;
+    padding-top: 16px;
+    margin-left: 13px;
+}
+
+.head_main_itemFood {
+    width: 26px;
+    float: left;
+    padding-top: 16px;
+    margin-left: 13px;
+}
+
+.head_main_itemDrink {
+    width: 26px;
+    float: left;
+    padding-top: 16px;
+    margin-left: 13px;
+}
+
+.head_main_itemVipShoop {
+    width: 39px;
+    float: left;
+    padding-top: 16px;
+    margin-left: 13px;
+}
+
+.head_main_itemDonloadApp {
+    width: 68px;
+    float: left;
+    padding-top: 16px;
+    margin-left: 12px;
+}
+
+.head_main_centerSearh {
+    width: 172px;
+    height: 45px;
+    position: relative;
+    float: left;
+}
+
+.head_main_search {
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 4px;
+}
+
+.head_main_searchBtn {
+    position: relative;
+    bottom: 21px;
+    left: 145px;
+    cursor: pointer;
+    outline:none;
+    background-color:rgba(0, 0, 0, 0);
+    border: 1px solid rgba(0, 0, 0,0);
+}
+
+.head_main_rightLogin {
+    width: 300px;
+    height: 45px;
+    float: left;
+}
+
+.head_main_rightList {
+    width: 300px;
+    height: 45px;
+    list-style: none;
+}
+
+.head_main_ietmLogin {
+    width: 39px;
+    max-width: 39px;
+    padding-top: 16px;
+    margin-left: 12px;
+    float: left;
+}
+/* 闅愯棌涓嬫媺鑿滃崟 */
+.head_main_itemPop{
+    width: 85px;
+    margin-top: 3px;
+    position: relative;
+    right: 48px;
+    display:none;
+    border: 1px solid hsla(0, 0%, 100%, .2);
+    background-color: hsla(0, 0%, 100%, .9);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    z-index: 100;
+}
+.head_main_itemPop_Welcome{
+    border-bottom: 1px dashed#99a2aa;
+    color:#99a2aa;
+}
+.head_main_itemPop>a{
+    margin-left: 2px;
+    color: #99a2aa;
+}
+.head_main_ietmRegister {
+    width: 52px;
+    padding-top: 16px;
+    margin-left: 12px;
+    float: left;
+}
+
+.head_main_ietmMessage {
+    width: 26px;
+    padding-top: 16px;
+    margin-left: 12px;
+    float: left;
+}
+
+.head_main_ietmVip {
+    width: 39px;
+    padding-top: 16px;
+    margin-left: 12px;
+    float: left;
+}
+
+.head_main_itemShoppingMessage {
+    width: 52px;
+    padding-top: 16px;
+    margin-left: 12px;
+    float: left;
+}
+/* ----------------------------------------------------浜岀骇瀵艰埅------------------------------------------------------ -----*/
+
+/* 杞挱鍥句笂鏂规嫾鎺ラ儴鍒� */
+.head_sec{
+    width: 1160px;
+    height: 40px;
+    font-size: 13px;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+.head_sec_show_Text_Top{
+    width: 234px;
+    height: 40px;
+    float: left;
+    background-color:pink;
+}
+.head_sec_show_Text_Top_leftContent{
+    width: 100px;
+    float: left;
+    margin:5px 10px;
+}
+.head_sec_show_Text_Top_leftContent>img{
+    float: left;
+}
+.head_sec_show_Text_Top_leftContent>p{
+    font-size:18px; 
+    color:#ffffff;
+    font-weight: 400;
+    float:right;
+}
+
+/* 浜岀骇瀵艰埅鍙充晶鎺ㄨ崘 */
+.head_sec_show_Recommend{
+    width: 916px;
+    height: 40px;
+    float: left;
+    font-size: 15px;
+    font-weight:bold;
+    font-family: "Microsoft YaHei";
+    margin:5px 5px;
+}
+.head_sec_show_Recommend>ul{
+    list-style: none;
+}
+.head_sec_show_Recommend>ul>li>a{
+    color: #999;
+}
+/* 闄愭椂鎶㈣喘 */
+.head_sec_show_Recommend_FlashDeal{
+    width:81px;
+    float: left;
+    margin-top: 8px;
+}
+.head_sec_show_Recommend_FlashDeal>a img{
+    float: left;
+}
+.head_sec_show_Recommend_FlashDeal>a span{
+    float: right;
+}
+/* 浠婃棩鐗逛环 */
+.head_sec_show_Recommend_TodaySales{
+    width:83px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.head_sec_show_Recommend_TodaySales>a img{
+    position: relative;
+    bottom: 2px;
+    float: left;
+}
+.head_sec_show_Recommend_TodaySales>a span{
+    float: right;
+}
+/* 璐ㄩ噺淇濊瘉 */
+.head_sec_show_Recommend_Quality{
+    width:60px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+/* 绀惧尯 */
+.head_sec_show_Recommend_Item{
+    width:30px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+/* 骞垮憡 */
+.head_sec_show_Recommend_Ad{
+    width:83px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.head_sec_show_Recommend_Ad>a img{
+    position: relative;
+    bottom: 2px;
+    float: left;
+}
+.head_sec_show_Recommend_Ad>a span{
+    float: right;
+}
+/* --------------------------------------------------瀵艰埅涓嬫柟鍥剧墖-------------------------------------------------------- */
+
+.neck {
+    width: 100%;
+    height:106px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    background-color: #a8dded;
+}
+
+.neck_content {
+    width: 60%;
+    height: 100%;
+    margin: 0px auto;
+}
+/* ----------------------------------------------------涓汉淇℃伅------------------------------------------------------------ */
+.myMsgPage{
+    width: 1160px;
+    margin: 10px auto;
+}
+.myMsgPage_wrap{
+    width: 1160px;
+    height: 2px;
+    margin:10px 0px 25px 0px;
+    background-color: #e6e6e6;
+}
+.myMsgPage_wrapControl{
+    width:128px;
+    height: 2px;
+    background-color: #f25d8e;
+}
+.myMsgPage_wrapMain{
+    width: 1160px;
+}
+.myMsgPage_wrapMain_Nav{
+    width:168px;
+    float: left;
+}
+.myMsgPage_wrapMain_Nav>ul{
+    list-style: none;
+}
+.myMsgPage_wrapMain_Nav>ul>li{
+    width: 168px;
+    height: 47px;
+    line-height:48px;
+    border-bottom: 1px solid #eee;
+}
+.myMsgPage_wrapMain_Nav>ul>li>a{
+    font-size: 14px;
+    margin-left: 50px;
+    color: #000;
+}
+.myMsgPage_wrapMain_NavActive{
+    background-color: #f25d8e;
+}
+/* --------------------------------鍒嗗壊绾�--------------------- */
+.myMsgPage_wrapMain_Content{
+    width: 972px;
+    position: relative;
+    left: 200px;
+}
+.myMsgPage_wrapMain_ContentWrap{
+    width: 700px;
+    height: 40px;
+    background-color: #f5f5f5;
+    margin-bottom: 25px;
+}
+.myMsgPage_wrapMain_ContentWrap>p{
+    padding-top:10px;
+    padding-left: 5px;
+    font-size: 14px;
+}
+.myMsgPage_wrapMain_ContentAlter{
+    width: 700px;
+    font-size: 14px;
+    color: #48576a;
+    padding-left: 20px;
+}
+.myMsgPage_wrapMain_ContentAlter_Item{
+    width: 225px;
+    height: 28px;
+    border: 1px solid #bfcbd9;
+    border-radius: 6px;
+    margin-left:10px;
+    margin-bottom: 15px;
+}
+.myMsgPage_wrapMain_ContentAlter_Btn{
+    width: 80px;
+    height: 36px;
+    border: 1px solid #c4c4c4;
+    border-radius: 6px;
+    background-color: #059ae7;
+    color: white;
+    margin-top: 20px;
+}
+/* ------------------------------------------------婊村弸绠＄悊----------------------------------------------------------------------- */
+.memberAdmin_Table{
+    position: relative;
+    right:168px;
+    width: 700px;
+    border: 1px solid black;
+    font-size: 14px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    border-radius: 4px;
+}
+/* --------------------------------------------------娉ㄥ唽椤�------------------------------------------------------------------------ */
+
+/* 涓讳綋 */
+
+.body {
+    width:980px;
+    height: 400px;
+    margin: 20px auto;
+}
+
+/* 娉ㄥ唽椤甸潰 */
+
+.register_container {
+    width: 420px;
+    height: 0px;
+    margin: 5px auto;
+    font-family: PingFangSC-Medium;
+}
+
+/* 娉ㄥ唽鍗曢」 */
+
+.register_input {
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    font-size: 14px;
+    width:420px;
+    height: 40px;
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+/*娉ㄥ唽鍗忚*/
+
+.register_agree {
+    width:420px;
+    height: 12px;
+    font-size: 12px;
+    margin-top: 12px;
+    display: block;
+}
+
+/* 澶嶉�夋 */
+
+.register_agree_checkbox {
+    margin: 2px;
+    padding: 0px;
+    width: 14px;
+    height: 14px;
+    float: left;
+}
+
+/* 澶嶉�夋鏂囧瓧 */
+
+.register_agree_test {
+    float: left;
+}
+
+/* 鐧诲綍 */
+
+.register_login {
+    font-size: 12px;
+    float: right;
+}
+
+/* --------------------------------------------鐧诲綍椤�------------------------------------------------------------------ */
+
+/* 鐧诲綍涓讳綋 */
+
+.loginPage_main {
+    width: 980px;
+    height: 300px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 宸﹁竟鍥剧墖 */
+
+.loginPage_Img {
+    width: 489px;
+    text-align: center;
+    float: left;
+    border-right: 1px solid #ddd;
+}
+
+/* 娉ㄥ唽鏂囧瓧鍐呭鍖哄煙 */
+
+.loginPage_Content {
+    width: 491px;
+    position: absolute;
+    top: 0;
+    left: 489px;
+}
+
+/* 鐢ㄦ埛鍚嶆 */
+
+.loginPage_userName {
+    width: 410px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    font-size: 14px;
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    margin-top: 50px;
+    margin-bottom: 14px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* 鐢ㄦ埛瀵嗙爜妗� */
+
+.loginPage_userPwd {
+    width: 410px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #dcdfe6;
+    font-size: 14px;
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    margin: 14px 40px;
+}
+/* 鐧诲綍澶辫触 */
+.loginPage_errorMsg{
+    color:#f66495;
+    font-size:13px;
+    padding-left: 40px;
+    padding-bottom: 12px;
+}
+/* 澶嶉�夋鏂囧瓧鍖哄煙 */
+.loginPage_checkArea {
+    width: 450px;
+    padding-left: 40px;
+}
+
+/* 澶嶉�夋宸﹂儴 */
+.loginPage_checkAreaLeft {
+    width: 280px;
+    height: 13px;
+    float: left;
+}
+
+.loginPage_checkAreaLeft>input {
+    width: 13px;
+    height: 13px;
+    margin-top: 1px;
+    float: left;
+}
+
+.loginPage_checkAreaLeft>span {
+    font-size: 12px;
+    margin-left: 10px;
+    color: #bbb;
+    float: right;
+}
+
+/* 澶嶉�夋鍙抽儴 */
+
+.loginPage_checkAreaRight {
+    width: 130px;
+    height: 13px;
+    float: left;
+    margin-left: 12px;
+}
+
+.loginPage_checkAreaRight>a {
+    font-size: 12px;
+    position: relative;
+    top: -5px;
+}
+
+/* 鐧诲綍鎸夐挳 */
+
+.loginPage_buttonLogin {
+    width: 164px;
+    height: 36px;
+    color: #f6f9fa;
+    margin-top: 14px;
+    margin-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #7dd5f0;
+}
+
+/* 娉ㄥ唽鎸夐挳 */
+
+.loginPage_rgisterLogin {
+    width: 164px;
+    height: 36px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: white;
+}
+
+/* 鍏朵粬鐧诲綍鏂瑰紡 */
+
+.loginPage_otherLogin {
+    width: 350px;
+    float: left;
+    padding-top: 14px;
+    margin-left: 40px;
+}
+
+/* 寰崥鐧诲綍 */
+
+.loginPage_otherLogin_WB {
+    width: 91px;
+    float: left;
+}
+
+.loginPage_otherLogin_WB>a>img {
+    float: left;
+}
+
+.loginPage_otherLogin_WB>a>span {
+    color: #bbb;
+    float: right;
+    position: relative;
+    top: 2px;
+}
+
+/* QQ鐧诲綍 */
+
+.loginPage_otherLogin_QQ {
+    width: 84px;
+    float: left;
+    margin-left: 10px;
+}
+
+.loginPage_otherLogin_QQ>a>img {
+    float: left;
+}
+
+.loginPage_otherLogin_QQ>a>span {
+    color: #bbb;
+    float: right;
+    position: relative;
+    top: 2px;
+}
+/* ---------------------------------------------------------------鍏朵粬绫诲埆鑿滃搧璇︽儏椤�--------------------------------------------- */
+.DetailPage_Nav{
+    width: 1160px;
+    font-size: 14px;
+    margin: 10px auto;
+}
+.DetailPage_Nav a{
+    color: #666;
+}
+.DetailPage_Nav_Top{
+    width: 1160px;
+    margin: 8px 0px;
+}
+.DetailPage_Nav_Bottom{
+    width: 1160px;
+    border:1px solid #bbb;
+}
+.DetailPage_Nav_Sec{
+    width: 1160px;
+    height:50px;
+    border-bottom: 1px solid #bbb;
+}
+.DetailPage_Nav_Sec>ul{
+    padding-top:15px;
+    padding-left: 34px;
+    list-style: none;
+}
+.DetailPage_Nav_Sec>ul>li{
+    float: left;
+    margin-right:10px;
+}
+.DetailPage_Nav_Thir{
+    width: 1160px;
+    height:50px;
+}
+.DetailPage_Nav_Thir>ul{
+    padding-top:15px;
+    padding-left: 34px;
+    list-style: none;
+}
+.DetailPage_Nav_Thir>ul>li{
+    float: left;
+    margin-right:10px;
+}
+.DetailPage_Main{
+    width: 1160px;
+    margin: 19px auto;
+}
+.DetailPage_Content{
+    width: 1160px;
+    text-align: center;
+}
+.DetailPage_Content>ul>a>li>img{
+    margin: 10px 0px;
+}
+.DetailPage_Content>ul{
+    list-style: none;
+}
+.DetailPage_Content>ul>a>li{
+    width: 222px;
+    height: 240px;
+    margin-right:8px;
+    margin-bottom:10px;
+    border: 1px solid #dedede;
+    float: left;
+}
+
+.DetailPage_Operation{
+    width: 222px;
+    height: 25px;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+}
+.DetailPage_OperationBuy{
+    width: 109px;
+    height:25px;;
+    float: left;
+    padding-top: 5px;
+    border-top: 1px solid #dedede;
+    border-bottom: rgba(0, 0, 0, 0);
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+}
+.DetailPage_OperationHits{
+    width: 109px;
+    height:25px;
+    border: 1px solid #dedede;
+    float: left;
+    padding-top: 5px;
+    border-top: 1px solid #dedede;
+    border-bottom: rgba(0, 0, 0, 0);
+    border-left: 1px solid rgba(0, 0, 0, 0);
+    border-right: 1px solid #dedede;
+}
+/* ------------------------------------------搴曢儴------------------------------------------------------------------------- */
+
+/* 鏁翠釜鍖哄煙鍐呭 */
+
+.foot {
+    width: 100%;
+    background-color: #f6f9fa;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.foot_main {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+/* 宸﹁竟閮ㄥ垎 */
+
+.foot_main_left {
+    width: 400px;
+    float: left;
+}
+
+.foot_main_left>p {
+    padding-top: 15px;
+    color: #99a2aa;
+}
+
+.foot_main_left>ul {
+    list-style: none;
+    width: 390px;
+    height: 60px;
+    margin-top: 8px;
+}
+
+.foot_main_left>ul>li {
+    width: 70px;
+    float: left;
+    margin-bottom: 4px;
+    margin-right: 60px;
+}
+
+.foot_main_left>ul>li>a {
+    color: black;
+}
+
+/* 涓棿閮ㄥ垎 */
+
+.foot_main_center {
+    width: 420px;
+    float: left;
+    border-left: solid 1px #ddd;
+}
+
+.foot_main_center>p {
+    color: #99a2aa;
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+.foot_main_center>ul {
+    width: 400px;
+    height: 60px;
+    margin-top: 8px;
+    padding-left: 30px;
+    list-style: none;
+}
+
+.foot_main_center>ul>li {
+    width: 70px;
+    margin-right: 60px;
+    margin-bottom: 4px;
+    float: left;
+}
+
+.foot_main_center>ul>li>a {
+    color: #000;
+}
+
+/* 鍙充晶閮ㄥ垎 */
+
+.foot_main_right {
+    border-left: 1px solid #ddd;
+    float: right;
+}
+
+.foot_main_right>ul {
+    width: 300px;
+    height: 78px;
+    margin-top: 23px;
+    list-style: none;
+}
+
+.foot_main_right>ul>li {
+    float: left;
+    margin-left: 24px;
+}
+
+.foot_main_right>ul>li>a>p {
+    color: #000;
+    text-align: center;
+}

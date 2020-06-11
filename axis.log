@@ -1,0 +1,67 @@
+2019-07-02 17:59:24,368 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-07-02 17:59:24,385 17     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 17:59:24,385 17     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 17:59:24,388 20     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 17:59:24,389 21     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 17:59:37,377 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-07-02 17:59:37,395 18     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 17:59:37,395 18     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 17:59:37,396 19     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 17:59:37,396 19     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:00:09,761 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-07-02 18:00:09,779 18     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:00:09,779 18     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:00:09,779 18     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:00:09,779 18     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:00:09,871 110    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2019-07-02 18:01:08,015 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-07-02 18:01:08,032 17     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:01:08,032 17     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:01:08,033 18     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:01:08,033 18     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:01:08,128 113    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2019-07-02 18:01:08,321 306    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 1381965390.
+2019-07-02 18:01:08,321 306    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@525f1e4e]
+2019-07-02 18:01:08,327 312    [           main] DEBUG soft.dao.IndexDao.InitJiaChang  - ==>  Preparing: select * from food where type=1 order by hits DESC LIMIT 0,5 
+2019-07-02 18:01:08,356 341    [           main] DEBUG soft.dao.IndexDao.InitJiaChang  - ==> Parameters: 
+2019-07-02 18:01:08,382 367    [           main] DEBUG soft.dao.IndexDao.InitJiaChang  - <==      Total: 5
+2019-07-02 18:04:36,810 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-07-02 18:04:36,828 18     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:04:36,829 19     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:04:36,829 19     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:04:36,829 19     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:04:36,916 106    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:04:36,916 106    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:04:36,917 107    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:04:36,917 107    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:04:36,949 139    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2019-07-02 18:04:37,171 361    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 1587819720.
+2019-07-02 18:04:37,171 361    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ea434c8]
+2019-07-02 18:04:37,176 366    [           main] DEBUG soft.dao.IndexDao.InitJiaChang  - ==>  Preparing: select * from food where type=1 order by hits DESC LIMIT 0,5 
+2019-07-02 18:04:37,218 408    [           main] DEBUG soft.dao.IndexDao.InitJiaChang  - ==> Parameters: 
+2019-07-02 18:04:37,246 436    [           main] DEBUG soft.dao.IndexDao.InitJiaChang  - <==      Total: 5
+2019-07-02 18:05:43,355 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-07-02 18:05:43,372 17     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:05:43,372 17     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:05:43,372 17     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:05:43,372 17     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:05:43,457 102    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:05:43,457 102    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:05:43,457 102    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:05:43,457 102    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-02 18:05:43,498 143    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2019-07-02 18:05:43,703 348    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 1587819720.
+2019-07-02 18:05:43,703 348    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5ea434c8]
+2019-07-02 18:05:43,709 354    [           main] DEBUG soft.dao.IndexDao.InitJiaChang  - ==>  Preparing: select * from food where type=1 order by hits DESC LIMIT 0,5 
+2019-07-02 18:05:43,742 387    [           main] DEBUG soft.dao.IndexDao.InitJiaChang  - ==> Parameters: 
+2019-07-02 18:05:43,776 421    [           main] DEBUG soft.dao.IndexDao.InitJiaChang  - <==      Total: 5
+2019-07-04 09:30:59,337 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2019-07-04 09:30:59,370 33     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-04 09:30:59,370 33     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-04 09:30:59,371 34     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-04 09:30:59,371 34     [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2019-07-04 09:30:59,599 262    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2019-07-04 09:30:59,793 456    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 726950788.
+2019-07-04 09:30:59,793 456    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2b546384]
+2019-07-04 09:30:59,798 461    [           main] DEBUG oft.dao.FoodDao.foodSelectById  - ==>  Preparing: select foodtype.typeName,food.id,food.foodName,food.feature,food.material,food.price,food.type,food.picture,food.hits,food.comment from foodtype join food on foodtype.id=food.type where food.id=? 
+2019-07-04 09:30:59,827 490    [           main] DEBUG oft.dao.FoodDao.foodSelectById  - ==> Parameters: 1(Integer)

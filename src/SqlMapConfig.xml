@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--配置内容 -->
+<configuration>
+	<!--配置环境 -->
+	<environments default="mysql">
+		<!--配置mysql环境 -->
+		<environment id="mysql">
+			<!--配置事务 -->
+			<transactionManager type="JDBC" />
+			<!--配置连接池 -->
+			<dataSource type="POOLED">
+				<!--配置数据库信息 -->
+				<property name="driver" value="com.mysql.cj.jdbc.Driver" />
+				<property name="url" value="jdbc:mysql://localhost:3306/mealsystem?useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai&amp;useAffectedRows=true" />
+				<property name="username" value="root" />
+				<property name="password" value="koMYReasy007" />
+			</dataSource>
+		</environment>
+	</environments>
+	<!--配置映射文件 -->
+	<mappers>
+		<mapper resource="com/neusoft/mapper/IndexMapper.xml" />
+		<mapper resource="com/neusoft/mapper/UserMapper.xml" />
+		<mapper resource="com/neusoft/mapper/FoodMapper.xml" />
+		<mapper resource="com/neusoft/mapper/UserShopCarMapper.xml"/>
+	</mappers>
+</configuration>
